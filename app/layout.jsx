@@ -14,6 +14,7 @@ const banner = <Banner storageKey="some-key">Nextra 4.0 is released 🎉</Banner
 const navbar = (
   <Navbar
     logo={<b>اپ‌ادیتور</b>}
+    align='left'
     // ... Your additional navbar options
   />
 )
