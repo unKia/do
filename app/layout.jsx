@@ -1,8 +1,10 @@
 import { Footer, Layout, Navbar } from 'nextra-theme-docs'
-import { Banner, Head } from 'nextra/components'
+import { Banner, Head, Search } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
- 
+
+import localFont from 'next/font/local'
+
 export const metadata = {
   // Define your metadata here
   // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
@@ -15,13 +17,24 @@ const navbar = (
     // ... Your additional navbar options
   />
 )
-const footer = <Footer>MIT {new Date().getFullYear()} © Nextra.</Footer>
- 
+const footer = <Footer>{new Date().getFullYear()} © تمامی حقوق محفوظ است.</Footer>
+const search = (
+  <Search
+  placeholder='جست‌وجو...'
+    // ... Your additional navbar options
+  />
+)
+
+const myFont = localFont({
+  src: './public/Estedad-FD[KSHD,wght].ttf',
+})
+
+
 export default async function RootLayout({ children }) {
   return (
     <html
       // Not required, but good for SEO
-      lang="fa"
+      lang="fa" className={myFont.className}
       // Required to be set
       dir="rtl"
       // Suggested by `next-themes` package https://github.com/pacocoursey/next-themes#with-app
@@ -39,6 +52,7 @@ export default async function RootLayout({ children }) {
           pageMap={await getPageMap()}
           docsRepositoryBase="https://github.com/shuding/nextra/tree/main/docs"
           footer={footer}
+          search={search}
           // ... Your additional layout options
         >
           {children}

@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"dev": "next",
+		"dev": "next --turbopack",
 		"build": "next build",
 		"start": "next start"
 	},
