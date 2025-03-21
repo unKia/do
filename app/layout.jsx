@@ -21,6 +21,9 @@ const navbar = (
 // const footer = <Footer>{new Date().getFullYear()} © تمامی حقوق محفوظ است.</Footer>
 const search = (
   <Search
+  emptyResult='نتیجه‌ای یافت نشد.'
+  loading='در حال جست‌وجو...'
+  errorText='خطا در جست‌وجو!'
   placeholder='جست‌وجو...'
     // ... Your additional navbar options
   />
