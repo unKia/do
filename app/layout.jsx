@@ -57,6 +57,12 @@ export default async function RootLayout({ children }) {
           docsRepositoryBase="https://github.com/shuding/nextra/tree/main/docs"
           // footer={footer}
           search={search}
+          editLink=''
+          feedback={{content:''}}
+          toc={{
+            title: 'محتوای این صفحه',
+            backToTop: 'برگشت به بالا'
+          }}
           themeSwitch={{
             dark: 'تاریک',
             light: 'روشن',
