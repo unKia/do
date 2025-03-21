@@ -13,11 +13,11 @@ export const metadata = {
 const banner = <Banner storageKey="some-key">Nextra 4.0 is released 🎉</Banner>
 const navbar = (
   <Navbar
-    logo={<b>Nextra</b>}
+    logo={<b>اپ‌ادیتور</b>}
     // ... Your additional navbar options
   />
 )
-const footer = <Footer>{new Date().getFullYear()} © تمامی حقوق محفوظ است.</Footer>
+// const footer = <Footer>{new Date().getFullYear()} © تمامی حقوق محفوظ است.</Footer>
 const search = (
   <Search
   placeholder='جست‌وجو...'
@@ -51,8 +51,13 @@ export default async function RootLayout({ children }) {
           navbar={navbar}
           pageMap={await getPageMap()}
           docsRepositoryBase="https://github.com/shuding/nextra/tree/main/docs"
-          footer={footer}
+          // footer={footer}
           search={search}
+          themeSwitch={{
+            dark: 'تاریک',
+            light: 'روشن',
+            system: 'خودکار'
+          }}
           // ... Your additional layout options
         >
           {children}
