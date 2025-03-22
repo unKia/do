@@ -62,7 +62,7 @@ export default async function RootLayout({ children }) {
           editLink=''
           feedback={{content:''}}
           toc={{
-            title: 'محتوای این صفحه',
+            title: 'در این صفحه',
             backToTop: 'برگشت به بالا'
           }}
           themeSwitch={{

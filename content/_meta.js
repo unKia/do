@@ -3,10 +3,5 @@ export default {
     theme: {
       timestamp: false
     }
-  },
-  hey: {
-    theme: {
-      timestamp: false
-    }
   }
   }
