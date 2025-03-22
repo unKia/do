@@ -10,7 +10,7 @@ export const metadata = {
   // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
 }
  
-const banner = <Banner storageKey="some-key">محتوای این پایگاه، در حال آماده‌سازی توسط تیم اپ‌ادیتور می‌باشد و به مرور تکمیل خواهد شد.
+const banner = <Banner storageKey="some-key">این پایگاه در حال آماده‌سازی است و به مرور تکمیل خواهد شد.
 
 </Banner>
 const navbar = (
@@ -71,6 +71,12 @@ export default async function RootLayout({ children }) {
             light: 'روشن',
             system: 'خودکار'
           }}
+          sidebar={{
+            autoCollapse: true,
+            defaultMenuCollapseLevel: 1,
+            toggleButton: true
+          }}
+          darkMode={true}
           // ... Your additional layout options
         >
           {children}

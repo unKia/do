@@ -1,7 +1,13 @@
 export default {
   index: {
     theme: {
-      timestamp: false
+      timestamp: false,
+      breadcrumb: false
+    }
+  },
+  overview: {
+    theme: {
+      timestamp: false,
     }
   }
   }
