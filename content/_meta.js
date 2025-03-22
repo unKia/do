@@ -4,11 +4,11 @@ export default {
       type: 'menu',
       items: {
         about: {
-          title: 'About',
+          title: 'درباره‌ما',
           href: '/about'
         },
         contact: {
-          title: 'Contact Us',
+          title: 'تماس‌باما',
           href: 'mailto:hi@example.com'
         }
       }
