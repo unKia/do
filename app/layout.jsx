@@ -10,7 +10,9 @@ export const metadata = {
   // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
 }
  
-const banner = <Banner storageKey="some-key">Nextra 4.0 is released 🎉</Banner>
+const banner = <Banner storageKey="some-key">محتوای این پایگاه، در حال آماده‌سازی توسط تیم اپ‌ادیتور می‌باشد و به مرور، تکمیل خواهد شد.
+
+</Banner>
 const navbar = (
   <Navbar
     logo={<b>اپ‌ادیتور</b>}
