@@ -15,14 +15,7 @@ const banner = <Banner storageKey="some-key">محتوای این پایگاه، 
 </Banner>
 const navbar = (
   <Navbar
-    logo={    <>
-      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <image height="200" width="300" href="https://help.appeditor.ir/old/logo.svg" />
-      </svg>
-      <span style={{ marginRight: '.4em', fontWeight: 800 }}>
-        راهنمای اپ ادیتور
-      </span>
-    </>}
+    logo={<b>راهنمای اپ ادیتور</b>}
     align='left'
     // ... Your additional navbar options
   />
