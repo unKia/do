@@ -4,5 +4,10 @@
   "build": {
     "location": "iran"
   },
-  "disks": []
+  "disks": [
+    {
+      "name": "public",
+      "mountTo": "app/public"
+    }
+  ]
 }
