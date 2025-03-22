@@ -61,6 +61,7 @@ export default async function RootLayout({ children }) {
           search={search}
           editLink=''
           feedback={{content:''}}
+          lastUpdated={null}
           toc={{
             title: 'محتوای این صفحه',
             backToTop: 'برگشت به بالا'
