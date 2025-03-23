@@ -41,7 +41,7 @@ export default async function RootLayout({ children }) {
   return (
     <html
       // Not required, but good for SEO
-      lang="fa" className={myFont.className}
+      lang="fa-IR" className={myFont.className}
       // Required to be set
       dir="rtl"
       // Suggested by `next-themes` package https://github.com/pacocoursey/next-themes#with-app
@@ -59,7 +59,19 @@ export default async function RootLayout({ children }) {
           banner={banner}
           navbar={navbar}
           pageMap={[
-            { "data": {} },
+            { "data": {index: {
+              title: 'خانه',
+            theme: {
+              timestamp: false,
+              breadcrumb: false,
+              pagination: false,
+              
+            }},
+            overview: {
+              theme: {
+                timestamp: false,
+              }
+            }} },
             {
               "name": "index",
               "route": "/",
