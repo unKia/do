@@ -4,3 +4,4 @@ node_modules/
 .*.env
 out
 _pagefind/
+.DS_Store
