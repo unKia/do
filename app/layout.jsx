@@ -4,6 +4,7 @@ import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
 
 import localFont from 'next/font/local'
+import _meta from '../content/_meta.js'
 
 export const metadata = {
   // Define your metadata here
@@ -47,6 +48,7 @@ export default async function RootLayout({ children }) {
       suppressHydrationWarning
     >
       <Head
+      faviconGlyph="✦"
       children={<script defer src="https://anal.hkia.ir/script.js" data-website-id="5858efd7-8165-4619-92fe-745f28233627"></script>}
       // ... Your additional head options
       >
@@ -56,7 +58,29 @@ export default async function RootLayout({ children }) {
         <Layout
           banner={banner}
           navbar={navbar}
-          pageMap={await getPageMap()}
+          pageMap={[
+            { "data": {} },
+            {
+              "name": "index",
+              "route": "/",
+              "title": "خانه",
+              "frontMatter": {}
+            },
+            {
+              "name": "overview",
+              "route": "/overview",
+              "title": "در یک نگاه",
+              "frontMatter": {asIndexPage: true},
+              "children": [
+                {
+                  "name": "introduction",
+                  "route": "/overview/introduction",
+                  "title": "معرفی اپ ادیتور",
+                  "frontMatter": {}
+                }
+              ]
+            }
+          ]}
           docsRepositoryBase="https://hkia.ir"
           // footer={footer}
           search={search}

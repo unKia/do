@@ -4,12 +4,7 @@ export default {
     theme: {
       timestamp: false,
       breadcrumb: false,
-      pagination: false
+      pagination: false,
+      
     }
-  },
-  overview: {
-    theme: {
-      timestamp: false,
-    }
-  }
-  }
+  }}
