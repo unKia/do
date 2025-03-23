@@ -2,6 +2,6 @@ node_modules/
 .next/
 .swc/
 .*.env
-out/
+out
 _pagefind/
 .DS_Store
