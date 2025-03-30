@@ -117,6 +117,7 @@ export default async function RootLayout({ children }) {
           // ... Your additional layout options
         >
           {children}
+        <Search />
         </Layout>
       </body>
     </html>
