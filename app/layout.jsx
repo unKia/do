@@ -49,7 +49,6 @@ export default async function RootLayout({ children }) {
     >
       <Head
       faviconGlyph="✦"
-      children={<script defer src="https://anal.hkia.ir/script.js" data-website-id="5858efd7-8165-4619-92fe-745f28233627"></script>}
       // ... Your additional head options
       >
         {/* Your additional tags should be passed as `children` of `<Head>` element */}
