@@ -8,4 +8,9 @@ const withNextra = nextra({
 export default withNextra({
   // ... Other Next.js config options
   output: 'export',
+  images: {
+    unoptimized: true // mandatory, otherwise won't export
+  }
+  // Optional: Change the output directory `out` -> `dist`
+  // distDir: "build"
 })
