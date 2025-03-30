@@ -70,6 +70,8 @@ export default async function RootLayout({ children }) {
             overview: {
               theme: {
                 timestamp: false,
+                pagination: false,
+
               }
             }} },
             {
