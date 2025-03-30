@@ -41,7 +41,7 @@ export default async function RootLayout({ children }) {
   return (
     <html
       // Not required, but good for SEO
-      lang="fa-IR" className={myFont.className}
+      lang="en" className={myFont.className}
       // Required to be set
       dir="rtl"
       // Suggested by `next-themes` package https://github.com/pacocoursey/next-themes#with-app
