@@ -33,7 +33,7 @@ const search = (
 )
 
 const myFont = localFont({
-  src: './public/Estedad-FD[KSHD,wght].ttf',
+  src: '../public/Estedad-FD[KSHD,wght].ttf',
 })
 
 
